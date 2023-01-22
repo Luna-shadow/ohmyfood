@@ -1,0 +1,32 @@
+.headerWrapper{
+    position: sticky;
+    top:0;
+    z-index: 2;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 3.5rem;
+    background-color: $w;    
+    &_arrowArea{
+        position: absolute;
+        left: 1.5rem;
+        top: 1rem;
+        &_arrow{
+            font-size: 1.5rem;
+        }
+    }
+    &_logo{
+        margin: initial;
+        font-family: "shrikhand", sans-serif;
+        font-size: 1.7rem;
+    }
+}
+.homeHeader{
+    box-shadow: 0 0.2rem 0.2rem lighten($b, 70);
+    .header_arrowArea{
+        display: none;
+    }
+}

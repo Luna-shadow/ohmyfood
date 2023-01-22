@@ -1,0 +1,57 @@
+.mainWrapper{
+    background-color: $w;
+}
+.home_title{
+    font-family: "robotoMedium", sans-serif;
+    margin: initial;
+}
+.locate{
+    &_content{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        color: lighten($b,20);
+    }
+    &_locationPin{
+        margin-right: 1rem;
+    }
+    &_city{
+        font-family: 'robotoMedium', sans-serif;
+    }
+}
+.reservation{
+    margin: 3rem 0;
+    padding: 0 2rem;
+    text-align: center;
+    &_description{
+        margin-bottom: 2rem;
+        color: lighten($b,30);
+    }
+}
+.functioning{
+    margin: 6rem 0;
+    padding: 0 1rem;
+}
+.restaurantArea{
+    background-color: darken($w,3);
+    padding-top: 4rem;
+    &_title{
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .restaurantArea{
+        padding: 5rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        &_restaurant{
+           width: 20rem;
+        }
+        &_title{
+            text-align: center;
+            width: 100%;
+        }
+    }
+}

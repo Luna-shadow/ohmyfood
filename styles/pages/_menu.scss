@@ -1,0 +1,68 @@
+.tastWrapper{
+    background-image: url('../../img/restaurants/1.jpg');    
+}
+.frenchWrapper{
+    background-image: url('../../img/restaurants/4.jpg'); 
+}
+.enchantedWrapper{
+    background-image: url('../../img/restaurants/3.jpg'); 
+}
+.delightWrapper{
+    background-image: url('../../img/restaurants/2.jpg'); 
+}
+.tastWrapper,
+.frenchWrapper,
+.enchantedWrapper,
+.delightWrapper{
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: $primary;
+}
+.menuWrapper{
+    margin-top: 10rem;
+    padding: 1rem;
+    background-color: darken($w, 3);
+    border-radius: 2rem 2rem 0 0;
+}
+.titlePage{
+    &_titleArea{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &_title{
+        margin: 0.5rem 0;
+        font-family: 'shrikhand', sans-serif;
+        font-size: 1.5rem;
+    }
+    i{
+        font-size: 1.4rem;
+    }
+}
+.titleDishCategory{
+    font-size: 1rem;
+    position: relative;
+    font-family: 'robotoThin', sans-serif;
+    text-transform: uppercase;
+    &::after{
+        content:"";
+        position: absolute;
+        bottom: -0.3rem;
+        left: 0;
+        height: 0.2rem;
+        width: 2rem;
+        background-color: $tertiary;
+    }
+}
+.submitButtonArea{
+    margin: 2rem 0 ;
+    text-align: center;
+}
+
+@media screen and (min-width: 900px){
+    .menuWrapper{
+        margin: 20rem auto 0 auto;
+        max-width: 80rem;
+    }
+}

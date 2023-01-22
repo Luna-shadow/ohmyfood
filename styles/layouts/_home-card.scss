@@ -1,0 +1,60 @@
+
+.restaurantArea{
+    &_restaurant{
+        height: 15rem;
+        margin: 2rem 1rem;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 1rem lighten($b, 70);
+        transition: all 0.3s;
+        &:hover{
+            transform: scale(0.97);
+        }
+    }
+}
+.restaurant{
+    &_tast{
+        background-image: url('../img/restaurants/1.jpg');
+    }
+    &_enchanted{
+        background-image: url('../img/restaurants/3.jpg');
+    }
+    &_french{
+        background-image: url('../img/restaurants/4.jpg');
+    }
+    &_delight{
+        background-image: url('../img/restaurants/2.jpg');
+    }
+    &_novelty{
+        padding: 0.25rem 0.5rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background-color: $tertiary;
+        border-radius: 0.2rem;
+        color: darken($tertiary, 35);
+        font-family: "robotoMedium", sans-serif;
+    }
+    &_contentArea{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 1rem;
+        position: absolute;
+        right: 0;
+        bottom: -0.1rem;
+        left: 0;
+        background-color: $w;
+        border-radius: 0 0 1rem 1rem;
+    }
+}
+.content{
+    &_title{
+        margin: 0.5rem;
+    }
+    &_city{
+        margin: 0.5rem;
+    }
+}

@@ -1,0 +1,49 @@
+@keyframes loader {
+    0% {
+      transform: retate(0deg);
+      opacity: 1;
+    }
+    50%{
+        opacity:0;
+    }
+    100% {
+      transform: rotate(360deg);
+      opacity: 1;
+    }
+}
+
+@keyframes endLoader{
+    0% {        
+        opacity: 1;
+      }
+      90%{
+        opacity:1;
+      }
+      99%{
+        top:0
+      }
+      100% {        
+        opacity: 0;
+        top: initial;
+      }
+}
+
+.loaderArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $bo;
+    animation: 'endLoader' 4s forwards;
+    &_loader{
+        height: 5rem;    
+        width: 5rem;
+        border: 0.7rem dotted $w;
+        border-radius: 50%;
+        animation: 'loader' 3s infinite linear;
+    }
+}

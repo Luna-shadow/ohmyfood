@@ -1,0 +1,10 @@
+.button{
+    padding: 1rem;
+    text-align: center;
+    width: 12rem;
+    background: linear-gradient($secondary, $primary);
+    border: initial;
+    border-radius: 5rem;
+    box-shadow: 0 0.2rem 0.2rem lighten($b,70);
+    color: $w;
+}

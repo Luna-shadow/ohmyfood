@@ -11,9 +11,11 @@
 <body>
     <div class="mainWrapper">
         <!-- header -->
-        <header class="header homeHeader">
-            <a href="home.html" class="header_arrowArea"><i class="fa-solid fa-arrow-left-long header_arrowArea_arrow"></i></a>
-            <h1 class="header_logo">ohmyfood</h1>
+        <header class="headerWrapper">
+            <div class="header homeHeader">
+                <h1 class="header_logo">ohmyfood</h1>
+                <a href="home.html" class="header_arrowArea"><i class="fa-solid fa-arrow-left-long header_arrowArea_arrow"></i></a>
+            </div>
         </header>
         <!-- locate -->
         <section class="locate">
@@ -23,83 +25,83 @@
             </article>
         </section>
         <!-- reservation -->
-        <h2 class="reservation_title home_title">Réservez le menu qui vous convient</h2>
         <section class="reservation">
+            <h2 class="home_title">Réservez le menu qui vous convient</h2>
             <article class="reservation_content">
-                <p class="reservation_content_description">Découvrez des restaurants d'exeption, sélectionnés par nos soins.</p>
-                <div class="reservation_content_button"><a href="#" class="reservation_content_button_label">Explorer nos restaurants</a></div>
+                <p class="reservation_description">Découvrez des restaurants d'exeption, sélectionnés par nos soins.</p>
+                <button class="button">Explorer nos restaurants</button>
             </article>
         </section>
         <!-- functioning -->
-        <h2 class="functioning_title home_title">Fonctionnement</h2>
         <section class="functioning">
+            <h2 class="home_title">Fonctionnement</h2>
             <article class="functioning_step">
-                <div class="functioning_step_number">1</div>
-                <i class="fa-light fa-mobile-notch functioning_step_logo"></i>
-                <p class="functioning_step_description">Choisissez un restaurant</p>
+                <div class="step_number">1</div>
+                <i class="fa-solid fa-computer step_logo"></i>
+                <p class="step_description">Choisissez un restaurant</p>
             </article>
             <article class="functioning_step">
-                <div class="functioning_step_number">2</div>
-                <i class="fa-solid fa-list functioning_step_logo"></i>
-                <p class="functioning_step_description">Composez votre menu</p>
+                <div class="step_number">2</div>
+                <i class="fa-solid fa-list step_logo"></i>
+                <p class="step_description">Composez votre menu</p>
             </article>
             <article class="functioning_step">
-                <div class="functioning_step_number">3</div>
-                <i class="fa-solid fa-shop functioning_step_logo"></i>
-                <p class="functioning_step_description">Dégustez au restaurant</p>
+                <div class="step_number">3</div>
+                <i class="fa-solid fa-shop step_logo step_color"></i>
+                <p class="step_description">Dégustez au restaurant</p>
             </article>
         </section>
         <!-- restaurants -->
-        <h2 class="restaurantArea_title home_title">Restaurants</h2>
         <section class="restaurantArea">
-            <a href="taste.html" class="restaurantArea_link">
-                <article class="restaurantArea_restaurant">
-                    <div class="restaurantArea_restaurant_novelty">Nouveau</div>
-                    <div class="restaurantArea_restaurant_description">
-                        <div class="restaurantArea_restaurant_description_content">
-                            <h3 class="restaurantArea_restaurant_description_content_name">La palette du goût</h3>
-                            <p class="restaurantArea_restaurant_description_content_city">Menilmontant</p>
-                            <i class="fa-solid fa-heart restaurantArea_restaurant_description_content_like"></i>
+            <h2 class="restaurantArea_title home_title">Restaurants</h2>
+            <article class="restaurantArea_restaurant restaurant_tast">
+                <div class="restaurant_novelty">Nouveau</div>
+                <div class="restaurant_contentArea">
+                    <a href="taste.html">
+                        <div class="description_content">
+                            <h3 class="content_title">La palette du goût</h3>
+                            <p class="content_city">Menilmontant</p>
                         </div>
-                    </div>
-                </article>
-            </a>
-            <a href="enchanted.html" class="restaurantArea_link">
-                <article class="restaurantArea_restaurant">
-                    <div class="restaurantArea_restaurant_novelty">Nouveau</div>
-                    <div class="restaurantArea_restaurant_description">
-                        <div class="restaurantArea_restaurant_description_content">
-                            <h3 class="restaurantArea_restaurant_description_content_name">La note enchantée</h3>
-                            <p class="restaurantArea_restaurant_description_content_city">Charonne</p>
-                            <i class="fa-solid fa-heart restaurantArea_restaurant_description_content_like"></i>
+                    </a>
+                    <i class="fa-regular fa-heart heart"></i>
+                </div>                    
+            </article>
+            <article class="restaurantArea_restaurant restaurant_enchanted">
+                <div class="restaurant_novelty">Nouveau</div>
+                <div class="restaurant_contentArea">
+                    <a href="enchanted.html">
+                        <div class="description_content">
+                            <h3 class="content_title">La note enchantée</h3>
+                            <p class="content_city">Charonne</p>
                         </div>
-                    </div>
-                </article>
-            </a>
-            <a href="french.html" class="restaurantArea_link">
-                <article class="restaurantArea_restaurant">
-                    <div class="restaurantArea_restaurant_novelty">Nouveau</div>
-                    <div class="restaurantArea_restaurant_description">
-                        <div class="restaurantArea_restaurant_description_content">
-                            <h3 class="restaurantArea_restaurant_description_content_name">A la française</h3>
-                            <p class="restaurantArea_restaurant_description_content_city">Cité rouge</p>
-                            <i class="fa-solid fa-heart restaurantArea_restaurant_description_content_like"></i>
+                    </a>
+                    <i class="fa-regular fa-heart heart"></i>
+                </div>
+            </article>
+            <article class="restaurantArea_restaurant restaurant_french">
+                <div class="restaurant_novelty">Nouveau</div>
+                <div class="restaurant_contentArea">
+                    <a href="french.html">
+                        <div class="description_content">
+                            <h3 class="content_title">A la française</h3>
+                            <p class="content_city">Cité rouge</p>
                         </div>
-                    </div>
-                </article>
-            </a>
-            <a href="delight.html" class="restaurantArea_link">
-                <article class="restaurantArea_restaurant">
-                    <div class="restaurantArea_restaurant_novelty">Nouveau</div>
-                    <div class="restaurantArea_restaurant_description">
-                        <div class="restaurantArea_restaurant_description_content">
-                            <h3 class="restaurantArea_restaurant_description_content_name">Le délice des sens</h3>
-                            <p class="restaurantArea_restaurant_description_content_city">Folie-Méricourt</p>
-                            <i class="fa-solid fa-heart restaurantArea_restaurant_description_content_like"></i>
+                    </a>
+                    <i class="fa-regular fa-heart heart"></i>
+                </div>
+            </article>
+            <article class="restaurantArea_restaurant restaurant_delight">
+                <div class="restaurant_novelty">Nouveau</div>
+                <div class="restaurant_contentArea">
+                    <a href="delight.html">
+                        <div class="description_content">
+                            <h3 class="content_title">Le délice des sens</h3>
+                            <p class="content_city">Folie-Méricourt</p>
                         </div>
-                    </div>
-                </article>
-            </a>
+                    </a>
+                    <i class="fa-regular fa-heart heart"></i>
+                </div>
+            </article>
         </section>
         <!-- footer -->
         <footer class="footer">
@@ -108,9 +110,13 @@
                 <li class="footer_wrapper_item"><i class="fa-solid fa-utensils"></i> Proposer un restaurant</li>
                 <li class="footer_wrapper_item"><i class="fa-solid fa-handshake-angle"></i> Devenir partenaire</li>
                 <li class="footer_wrapper_item">Mention légale</li>
-                <li class="footer_wrapper_item">Contact</li>
+                <li class="footer_wrapper_item"><a href="mailto:Un@mail.test">Contact</a></li>
             </ul>
         </footer>
+    </div>
+    <!-- loader -->
+    <div class="loaderArea">
+        <div class="loaderArea_loader"></div>
     </div>
 </body>
 </html>

@@ -1,0 +1,72 @@
+.dishCategory{
+    &_dish{
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        margin: 1rem 0;
+        background-color: $w;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 2rem darken($w, 10);
+        &:hover{
+            .dish{
+                &_contentArea{
+                    width: 80%;
+                }
+                &_validationArea{
+                    flex: 1;
+                }
+                &_validate{
+                    transform: rotate(360deg);
+                }
+            }
+        }  
+    }  
+}
+.dish{
+    &_contentArea{
+        width: 100%;
+        position: relative;
+        transition: all 0.3s; 
+    }
+    &_title{
+        margin: 1rem 0.5rem 0 0.5rem;
+        width: 100%;
+        font-size: 1rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 90%;
+    }
+    &_descriptionArea{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }    
+    &_validationArea{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        width: 0;
+        background-color: $tertiary;
+        border-radius: 0 1rem 1rem 0;
+        color: $w;
+        transition: all 0.3s;
+    } 
+    &_validate{
+        transition: all 0.5s;
+    }   
+}
+.descriptionArea{
+    &_description{
+        margin: 0.5rem;
+        font-size: 0.9rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 80%;
+    }
+    &_price{
+       margin: 0.5rem;
+    }
+}

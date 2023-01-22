@@ -1,0 +1,55 @@
+.functioning{
+    margin: auto;
+    max-width: 40rem;
+    text-align: center;
+    &_step{
+        display: flex;
+        align-items: center;
+        margin: 3rem 1rem;
+        padding: 2rem 1rem;
+        position: relative;
+        box-shadow: 0 0.5rem 1rem lighten($b, 90);
+        border-radius: 2rem;
+        transition: all 0.3s;
+        &:hover{
+            background-color: lighten($primary, 35);
+        }
+        .step{
+            &_number{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 1.5rem;
+                position: absolute;
+                left: -0.75rem;
+                width: 1.5rem;
+                background-color: $primary;
+                border-radius: 50%;
+                color: $w;
+            }
+            &_logo{
+                margin: 0 1.5rem;
+                color: lighten($b, 30);
+                font-size: 1.2rem;
+            }
+            &_description{
+                margin: initial;
+                font-family: "robotoMedium", sans-serif;
+            }
+            &_color{
+                color: $primary;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 900px){
+    .functioning{    
+        &_step{
+            justify-content: center;
+            margin: 3rem auto;
+            width: 20rem;
+        }
+    }
+    
+}
