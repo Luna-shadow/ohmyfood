@@ -544,8 +544,8 @@ a {
 }
 
 .loaderArea_loader {
-  height: 5rem;
-  width: 5rem;
+  height: 6rem;
+  width: 6rem;
   border: 0.7rem dotted #ffffff;
   border-radius: 50%;
   -webkit-animation: 'loader' 3s infinite linear;
@@ -562,7 +562,8 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 1rem 0;
+  margin: 1rem auto;
+  max-width: 40rem;
   background-color: #ffffff;
   border-radius: 1rem;
   -webkit-box-shadow: 0 0.5rem 2rem #e6e6e6;

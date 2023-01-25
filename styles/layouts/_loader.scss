@@ -40,8 +40,8 @@
     background-color: $bo;
     animation: 'endLoader' 4s forwards;
     &_loader{
-        height: 5rem;    
-        width: 5rem;
+        height: 6rem;    
+        width: 6rem;
         border: 0.7rem dotted $w;
         border-radius: 50%;
         animation: 'loader' 3s infinite linear;
